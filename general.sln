@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "permutation", "permutation\permutation.csproj", "{86DBF959-68CB-4F1B-8CB9-1BFDB160235D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolHRAdministration", "SchoolHRAdministration\SchoolHRAdministration.csproj", "{FB3ABD5E-A64F-4F9D-8C07-A72C86B92676}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SchoolHRAdministration", "SchoolHRAdministration", "{7620C94D-B3D2-426C-A94F-029B6A536FD1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAdministrationAPI", "SchoolHRAdministration\HRAdministrationAPI\HRAdministrationAPI.csproj", "{1581B4D5-F2C6-4745-A7F5-ED2EC8F0768A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86DBF959-68CB-4F1B-8CB9-1BFDB160235D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86DBF959-68CB-4F1B-8CB9-1BFDB160235D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86DBF959-68CB-4F1B-8CB9-1BFDB160235D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86DBF959-68CB-4F1B-8CB9-1BFDB160235D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB3ABD5E-A64F-4F9D-8C07-A72C86B92676}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB3ABD5E-A64F-4F9D-8C07-A72C86B92676}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB3ABD5E-A64F-4F9D-8C07-A72C86B92676}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB3ABD5E-A64F-4F9D-8C07-A72C86B92676}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1581B4D5-F2C6-4745-A7F5-ED2EC8F0768A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1581B4D5-F2C6-4745-A7F5-ED2EC8F0768A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1581B4D5-F2C6-4745-A7F5-ED2EC8F0768A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1581B4D5-F2C6-4745-A7F5-ED2EC8F0768A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FB3ABD5E-A64F-4F9D-8C07-A72C86B92676} = {7620C94D-B3D2-426C-A94F-029B6A536FD1}
+		{1581B4D5-F2C6-4745-A7F5-ED2EC8F0768A} = {7620C94D-B3D2-426C-A94F-029B6A536FD1}
+	EndGlobalSection
+EndGlobal

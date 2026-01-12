@@ -1,0 +1,19 @@
+# .NET build o/p
+**/bin/
+**/obj/
+
+# VS Code
+.vs/
+.vscode/
+
+# Custom files
+*.user
+*.suo
+*.rsuser
+
+# OS related
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

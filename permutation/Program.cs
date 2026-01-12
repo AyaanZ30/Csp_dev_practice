@@ -25,7 +25,7 @@ namespace Variables
 
             string jumbled = new string(letters.ToArray());
 
-            System.Console.WriteLine($"Jumbled word : {jumbled} ({count-1} permutations possible)");
+            System.Console.WriteLine($"Jumbled word : {jumbled} (TOTAL : {count} permutations possible)");
         }
 
         static void Shuffle<T>(List<T> list)
