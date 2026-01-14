@@ -6,6 +6,13 @@ using HRAdministrationAPI;
 
 namespace SchoolHRAdministration
 {
+    public enum EmployeeType
+    {
+        Teacher,
+        HeadOfDepartment,
+        DeputyHeadMaster,
+        HeadMaster 
+    }
     class Program
     {
         public delegate decimal EarningsCalculator(int years, decimal salary);
@@ -57,41 +64,16 @@ namespace SchoolHRAdministration
         public static void SeedData(List<IEmployee> employees)
         {
             // Teacher extends EmployeeBase extends IEmployee (so IEmployee teacher1 also works)
-            Teacher e1 = new Teacher
-            {
-                Id = 1,
-                firstName = "Kelly",
-                lastName = "Brook",
-                salary = 4000
-            };
-
+            IEmployee e1 = EmployeeFactory.GetEmployeeInstance(EmployeeType.DeputyHeadMaster, 1, "Dnyanesh", "Sawant", 10000);
             employees.Add(e1);
 
-            HeadOfDepartment e2 = new HeadOfDepartment
-            {
-                Id = 2,
-                firstName = "Shawn",
-                lastName = "Kennedy",
-                salary = 5000
-            };
+            IEmployee e2 = EmployeeFactory.GetEmployeeInstance(EmployeeType.HeadOfDepartment, 2, "Hitansh", "Mehta", 7000);
             employees.Add(e2);
 
-            DeputyHeadMaster e3 = new DeputyHeadMaster
-            {
-                Id = 3,
-                firstName = "James",
-                lastName = "Watson",
-                salary = 8000
-            };
+            IEmployee e3 = EmployeeFactory.GetEmployeeInstance(EmployeeType.Teacher, 3, "Veer", "Raje", 6000);
             employees.Add(e3);
 
-            HeadMaster e4 = new HeadMaster
-            {
-                Id = 4,
-                firstName = "Alex",
-                lastName = "Richards",
-                salary = 10000
-            };
+            IEmployee e4 = EmployeeFactory.GetEmployeeInstance(EmployeeType.HeadMaster, 4, "Jethalal", "Gada", 15000);
             employees.Add(e4);
         }
     }
@@ -119,5 +101,48 @@ namespace SchoolHRAdministration
     {
         public override decimal salary{get => base.salary + (base.salary * 0.05m);}
         public int YearsOfExperience{get; set;} 
+    }
+
+    public static class EmployeeFactory
+    {
+        public static IEmployee GetEmployeeInstance(EmployeeType employeeType, int Id, string firstName, string lastName, decimal salary)
+        {
+            IEmployee employee = null;
+            switch (employeeType)
+            {
+                case EmployeeType.Teacher:
+                {
+                    employee = FactoryPattern<Teacher, IEmployee>.getInstance();
+                    break;
+                }
+                case EmployeeType.HeadOfDepartment:
+                {
+                    employee = FactoryPattern<HeadOfDepartment, IEmployee>.getInstance();
+                    break;
+                }
+                case EmployeeType.DeputyHeadMaster:
+                {
+                    employee = FactoryPattern<DeputyHeadMaster, IEmployee>.getInstance();
+                    break;
+                }
+                case EmployeeType.HeadMaster:
+                {
+                    employee = FactoryPattern<HeadMaster, IEmployee>.getInstance();
+                    break;
+                } 
+            }
+            if(employee != null)
+            {
+                employee.Id = Id;
+                employee.firstName = firstName;
+                employee.lastName = lastName;
+                employee.salary = salary;
+            }
+            else
+            {
+                throw new NullReferenceException();
+            }
+            return employee;
+        }
     }
 }
