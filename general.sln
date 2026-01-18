@@ -7,10 +7,13 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "permutation", "permutation\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SchoolHRAdministration", "SchoolHRAdministration\SchoolHRAdministration.csproj", "{FB3ABD5E-A64F-4F9D-8C07-A72C86B92676}"
 EndProject
-
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HRAdministrationAPI", "HRAdministrationAPI\HRAdministrationAPI.csproj", "{0F2A3723-914F-46DF-BC62-234D786417DA}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DelegateUses", "DelegateUses\DelegateUses.csproj", "{7009965A-4452-4BE4-BE87-8DE7BC1D6F97}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubMembershipApp", "ClubMembershipApp\ClubMembershipApp.csproj", "{A378BA07-B1D5-4CB6-A249-8F9B5731F6B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FieldValidatorAPI", "FieldValidatorAPI\FieldValidatorAPI.csproj", "{F913E8BB-FE7C-4931-B677-2F155EC08FF3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,9 +44,16 @@ Global
 		{7009965A-4452-4BE4-BE87-8DE7BC1D6F97}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7009965A-4452-4BE4-BE87-8DE7BC1D6F97}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7009965A-4452-4BE4-BE87-8DE7BC1D6F97}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A378BA07-B1D5-4CB6-A249-8F9B5731F6B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A378BA07-B1D5-4CB6-A249-8F9B5731F6B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A378BA07-B1D5-4CB6-A249-8F9B5731F6B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A378BA07-B1D5-4CB6-A249-8F9B5731F6B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F913E8BB-FE7C-4931-B677-2F155EC08FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F913E8BB-FE7C-4931-B677-2F155EC08FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F913E8BB-FE7C-4931-B677-2F155EC08FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F913E8BB-FE7C-4931-B677-2F155EC08FF3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FB3ABD5E-A64F-4F9D-8C07-A72C86B92676} = {7620C94D-B3D2-426C-A94F-029B6A536FD1}
-		{1581B4D5-F2C6-4745-A7F5-ED2EC8F0768A} = {7620C94D-B3D2-426C-A94F-029B6A536FD1}
 	EndGlobalSection
 EndGlobal

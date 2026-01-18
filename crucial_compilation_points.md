@@ -275,3 +275,8 @@ Once structure is right:
 ---
 
 🚀 *This repository intentionally follows real-world .NET design principles.*
+
+
+## MIGRATION in C# : version control for your DB schema (generate SQL queries <- C# model code changes)
+1] Tracking changes in your C# model classes.
+2] Converting those changes into database schema changes
